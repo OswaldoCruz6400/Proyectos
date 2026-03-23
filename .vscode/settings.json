@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Segundo Parcial"
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:system"
+}

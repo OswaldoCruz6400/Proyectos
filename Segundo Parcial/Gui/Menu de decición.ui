@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>327</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Ventana principal */
+QMainWindow {
+    background-color: #f4f6f8;
+}
+
+/* Barra de menú */
+QMenuBar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 6px;
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, Arial;
+}
+
+/* Items del menú */
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* Hover en menú */
+QMenuBar::item:selected {
+    background-color: #34495e;
+}
+
+/* Menú desplegable */
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* Items dentro del menú */
+QMenu::item {
+    padding: 8px 20px;
+    color: #333;
+}
+
+/* Hover en items */
+QMenu::item:selected {
+    background-color: #4f73b8;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Separadores */
+QMenu::separator {
+    height: 1px;
+    background: #ddd;
+    margin: 5px 0;
+}
+
+/* Barra de estado */
+QStatusBar {
+    background-color: #ecf0f1;
+    color: #333;
+    border-top: 1px solid #ccc;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>327</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProyectos">
+    <property name="title">
+     <string>Proyectos</string>
+    </property>
+    <widget class="QMenu" name="menuSegundo_Parcial">
+     <property name="title">
+      <string>Segundo Parcial</string>
+     </property>
+     <addaction name="actionRegresi_n_Lineal"/>
+     <addaction name="actionIntegraci_n_Numerica"/>
+    </widget>
+    <addaction name="menuSegundo_Parcial"/>
+   </widget>
+   <addaction name="menuProyectos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionRegresi_n_Lineal">
+   <property name="text">
+    <string>Regresión Lineal</string>
+   </property>
+  </action>
+  <action name="actionIntegraci_n_Numerica">
+   <property name="text">
+    <string>Integración Numerica</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
